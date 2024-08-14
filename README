@@ -1,0 +1,40 @@
+# GT Scheduler Monitor
+
+## Overview
+This application monitors your desired class and sends notifications using Twilio.
+
+## Setup
+
+1. **Environment Variables**
+   - Create a `.env` file in the root of your project.
+   - Fill in the following environment variables from your Twilio account in [twilio.com/console](https://www.twilio.com/console):
+     ```plaintext
+     TWILIO_ACCOUNT_SID=your_twilio_account_sid
+     TWILIO_AUTH_TOKEN=your_twilio_auth_token
+     TWILIO_NUMBER=your_twilio_phone_number
+     ```
+
+2. **Install Dependencies**
+   - Run the following command to install the necessary dependencies:
+     ```bash
+     npm install twilio
+     ```
+
+3. **Add Your Phone Number**
+   - Open the `whitelist.json` file in the root of your project.
+   - Add your phone number to the list of allowed numbers. The file should look like this:
+     ```json
+     {
+       "whitelist": [
+         "1234567890"
+       ]
+     }
+     ```
+     Replace `1234567890` with your actual phone number, excluding the country code.
+
+## Running the Application
+
+To run this application, execute the following command in your terminal:
+
+```bash
+node index.js
