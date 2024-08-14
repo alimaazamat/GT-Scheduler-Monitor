@@ -17,7 +17,7 @@ This application monitors your desired class and sends notifications using Twili
 2. **Install Dependencies**
    - Run the following command to install the necessary dependencies:
      ```bash
-     npm install twilio
+     npm install
      ```
 
 3. **Add Your Phone Number**
